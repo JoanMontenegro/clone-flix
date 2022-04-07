@@ -1,0 +1,133 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    width: 100vw;
+    min-width: 320px;
+
+    padding: 0;
+    margin: 0;
+
+    background-color: #222222;
+    
+}
+
+header {
+
+    width: 100%;
+    height: 500px;
+
+    background-image: url('https://assets.nflxext.com/ffe/siteui/vlv3/0bd3a69d-6790-4edc-9818-1c8c558946c2/21e486c0-216d-48fe-80a1-08a9ea4003fb/CO-es-20220329-popsignuptwoweeks-perspective_alpha_website_small.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: inset 0 90px 100px black;
+    
+
+
+
+
+
+}
+
+.header__top-container {
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    
+
+    padding: 30px 15px 0 15px;
+
+
+
+}
+
+.top-container__item {
+    display: inline-block;
+}
+
+
+.top-container__logo {
+
+    width: 89px;
+    height: 24px;
+    
+  
+
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Netflix_logo.svg/300px-Netflix_logo.svg.png?20220318121227');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.top-container__menulang {
+    width: 89px;
+    height: 30px;
+  
+    
+}
+
+.language-container {
+    width: 100%;
+    height: 100%;
+}
+
+.menulang-container {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+.top-container__login {
+    width: 89px;
+    height: 24px;
+
+    background-color: red;
+
+    padding: 4px 0;
+    text-align: center;
+
+    
+
+    border-radius: 4px;
+  
+    
+}
+.menulang-container::before{
+    content: 'hemannnn';
+    width: 50px;
+    display: inline-block;
+   
+}
+
+
+.login-anchor {
+
+    display: inline-block;
+    
+  
+
+    font-size: 1.5rem;
+    color: white;
+   
+    text-decoration: none;
+    text-align: center;
+}
+
+
+
+
+
