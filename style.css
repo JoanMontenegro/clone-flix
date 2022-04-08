@@ -81,7 +81,10 @@ header {
     width: 89px;
     height: 30px;
     border: 1px solid white;
+    border-radius: 4px;
     margin-right: 10px;
+    position: relative;
+    
   
     
 }
@@ -92,17 +95,17 @@ header {
     width: 15px;
     height: 15px;
     display: inline-block;
-    position: relative;
+    position: absolute;
 
-    top: 3px;
-    left: 4px;
+    top: 6px;
+    left: 5px;
 
 
 
     background-image: url('https://upload.wikimedia.org/wikipedia/commons/a/ae/Globe_icon-white.svg');
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; 
     
    
 }
@@ -111,20 +114,24 @@ header {
     display: inline-block;
     position: relative;
 
-    right: -5px;
-    width: 65%;
+    right: -1px;
+    width: 100%;
     height: 100%;
     border: none;
     background-color: transparent;
     color: white;
     margin-right: 0;
+    text-align: right;
 }
+
+
 
 
 
 .option-lang { /*OPTIONS OF SELECT*/
     background-color: #222222;
     border: none;
+   
 }
 
 
