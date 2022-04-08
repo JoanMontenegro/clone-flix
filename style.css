@@ -1,6 +1,7 @@
 html {
     box-sizing: border-box;
     font-size: 62.5%;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 *, *:before, *:after {
@@ -15,9 +16,12 @@ body {
     margin: 0;
 
     background-color: #222222;
+
+    
     
 }
 
+/*HEADER GENERAL CONTAINER*/
 header {
 
     width: 100%;
@@ -36,7 +40,9 @@ header {
 
 }
 
-.header__top-container {
+/* HEADER TOP PART - LOGO LANGUAGE AND SIGNIN */
+
+.header__top-container { /*LOGO LANG BUTTON CONTAINER */
     width: 100%;
     height: auto;
 
@@ -44,20 +50,16 @@ header {
     align-items: flex-start;
     justify-content: space-between;
 
-    
 
     padding: 30px 15px 0 15px;
-
-
-
 }
 
-.top-container__item {
+.top-container__item { /* ITEMS (LOGO, LANG BUTTON) */
     display: inline-block;
 }
 
 
-.top-container__logo {
+.top-container__logo { /* LOGO CONTAINER */
 
     width: 89px;
     height: 24px;
@@ -70,28 +72,65 @@ header {
     background-size: contain;
 }
 
-.top-container__menulang {
+.container-right-side { /*CONTAINER LANG AND LOGIN */
+/*nothing here yet*/
+    
+}
+
+.top-container__menulang { /* CONTAINER DIV OF SELECT ITEMS FOR LANGUAGE*/
     width: 89px;
     height: 30px;
+    border: 1px solid white;
+    margin-right: 10px;
   
     
 }
 
-.language-container {
-    width: 100%;
-    height: 100%;
+.top-container__menulang::before{ /* TRYING TO PUT THE GLOBE BEFORE THE LANGUAGE OPTION*/
+    content: '';
+
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    position: relative;
+
+    top: 3px;
+    left: 4px;
+
+
+
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/a/ae/Globe_icon-white.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+   
 }
 
-.menulang-container {
-    width: 100%;
+.menulang-container { /* SELECT CONTAINER OPTIONS */
+    display: inline-block;
+    position: relative;
+
+    right: -5px;
+    width: 65%;
     height: 100%;
+    border: none;
+    background-color: transparent;
+    color: white;
+    margin-right: 0;
+}
+
+
+
+.option-lang { /*OPTIONS OF SELECT*/
+    background-color: #222222;
+    border: none;
 }
 
 
 
 
-
-.top-container__login {
+.top-container__login { /*DIV CONTAINER FOR BUTTON*/
     width: 89px;
     height: 24px;
 
@@ -99,6 +138,7 @@ header {
 
     padding: 4px 0;
     text-align: center;
+    vertical-align: top;
 
     
 
@@ -106,21 +146,16 @@ header {
   
     
 }
-.menulang-container::before{
-    content: 'hemannnn';
-    width: 50px;
-    display: inline-block;
-   
-}
 
 
-.login-anchor {
+.login-anchor { /* ANCHOR BUTTON*/
 
     display: inline-block;
     
   
 
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
     color: white;
    
     text-decoration: none;
